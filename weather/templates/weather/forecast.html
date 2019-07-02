@@ -5,12 +5,74 @@
 <head>
 	<title>Forecast</title>
 	
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
-<body>
+<body bgcolor = "lightblue">
 	<!-- your single-location forecast interface here -->
+  
+  <div class="top-line">
+  <h1 style="text-align:center; font-size:40px">
+    <span class="return">
+      <span class="glyphicon glyphicon-arrow-left"></span>
+    </span>
+    
+     Berkeley
+    
+    <span class="add-this">
+      <span class="glyphicon glyphicon-plus"></span>
+    </span>
+  </h1>
+  </div>  
+  
+  <h2 style="text-align:center; font-size:30px">
+    Sunny
+  </h2>
+  
+  <p style="text-align:center;">
+    <img src="/static/weather/assets/sun-3-xxl.png" align="middle" width="150" height="150">
+  </p>
+  
+  <p style="text-align:center; font-size:40px">
+    22°C
+  </p>
+  
+  <div class="water-wind-wrapper">
+    <h3 style="text-align:center">
+      <span class="glyphicon glyphicon-tint"></span> : 0%, <span class="wind"> ≈</span> <span class="wind-level">: 5 mph</span>
+    </h3>
+    </span>
+  </div>
+  
+  <div style="text-align:center">
+    <span class="weather-list">
+    <img src="/static/weather/assets/sun-3-xxl.png" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/sun-3-xxl.png" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/sun-3-xxl.png" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/partly-cloudy-day.png" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/partly-cloudy-day.png" align="middle" width="45" height="45">
+    </span>    
+  </div>
+  
+  <div style="text-align:center"> 
+    <span class="hours-wrapper">
+      <span class="glyphicon glyphicon-triangle-left"></span>
+      <span style="font-size:18px">1pm 2pm 3pm 4pm 5pm</span>
+      <span class="glyphicon glyphicon-triangle-right"></span>
+    </span>
+  </div>
+  
+  <div style="text-align:center"> 
+    <span class="hourly-temp">
+      <span style="font-size:18px">22°C 22°C 20°C 19°C 18°C</span>
+    </span>
+  </div>
+  
 </body>
 </html>
 

@@ -4,12 +4,49 @@
 <html>
 <head>
 	<title>Comparison - Alert!</title>
-	
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/comp.css' %}" />
 
 </head>
 <body>
+  <h1>
+    <span class="return">
+      <span class="glyphicon glyphicon-arrow-left"></span>
+    </span>
+    <div style='text-align:center'>
+      <span>My Cities </span>
+      <span class="glyphicon glyphicon-home"></span>
+    </div>
+  </h1>
+  
 	<!-- your comparison interface with alert here -->
+  <div class="boxed1">
+    <span class="city1"> Berkeley, CA </span>
+    <span class="glyphicon glyphicon-remove"></span>
+    <img src="/static/weather/assets/sun-3-xxl.png" class="center" width="100" height="100">
+    <div class="temp1">19°C</div>
+  </div>
+  
+  <div class="boxed2">
+    <span class="city2"> Oakland, CA </span>
+    <span class="glyphicon glyphicon-remove"></span>
+    <img src="/static/weather/assets/lightning.svg" class="center" width="100" height="100">
+    <div class="temp2">2°C</div>
+    <div class="warning">
+      <img src="/static/weather/assets/warning.svg" align="middle" width="30" height="30">
+    </div>
+  </div>
+ 
+  <div class="add-city">
+    <div class="add">Add </div> 
+    <div class="plus">+</div>
+    <div class="city">City</div>
+  </div>
+  
 </body>
 </html>

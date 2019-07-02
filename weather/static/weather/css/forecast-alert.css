@@ -1,30 +1,14 @@
 body {
-  background-color: lightblue;
+  background-color: midnightblue;
   color: white;
 }
 
-p {
- color: white;
- padding: 4px;
-}
-
-.alert-wrapper {
-  background-color: lightblue;
-  color: white;
-}
 
 .glyphicon glyphicon-arrow-left {
   font-size: 50px;
-  position: fixed;
+  position: absolute;
   bottom: 10px;
   align-content: center;
-}
-
-.submit-with-icon {
-  background: transparent;
-  border: 0px;
-  padding: 0;
-  outline: 0;
 }
 
 .hours-wrapper {
@@ -58,6 +42,9 @@ p {
 .return {
   font-size: 30px;
   position: relative;
+  padding-top: 0px;
+  padding-left: -50px;
+  word-spacing:50px;
 }
 
 .weather-list {
@@ -69,14 +56,14 @@ p {
   word-spacing: 3px;
 }
 
+.alert-wrapper {
+  position: fixed;
+}
+
 .add-this {
-  font-size: 30px;
+  font-size: 5px;
   position: relative;
+  padding-top: 0px;
+  padding-left: 50px;
+  word-spacing:50px;
 }
-
-.top-line {
-  word-spacing: 30px;
-}
-
-
-

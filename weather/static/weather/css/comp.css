@@ -1,0 +1,104 @@
+body {
+  background-color: lightblue;
+  color:white;
+}
+
+.city1 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.city2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.temp1 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 0px;
+}
+
+.temp2 {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+}
+
+.boxed1 {
+  float: left;
+  display: inline; 
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border: 2px solid black; 
+  background-color: lightblue; 
+  text-align: center;
+}
+
+.boxed2 {
+  float: right;
+  display: inline; 
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  border: 2px solid black; 
+  background-color: lightblue; 
+  text-align: center;
+}
+
+.add-city {
+  margin-bottom: 200px;
+  color: white;
+  display: inline; 
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  background-color: lightblue; 
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  border-style: dashed;
+  border-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: black;
+}
+
+.add {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  top: 20px;
+}
+
+.city {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  bottom:-50px;
+}
+
+.plus {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  bottom:-30px;
+}
+
+.return {
+  font-size: 30px;
+  position: relative;
+}
+
+.h1 {
+  word-spacing:30px;
+}

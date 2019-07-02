@@ -4,17 +4,82 @@
 <html>
 <head>
 	<title>Forecast - Alert!</title>
-	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
-
+  
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/forecast-alert.css' %}" />
 </head>
+  
 <body>
 	<!-- your single-location forecast with alert interface here -->
+  <div class="alert-wrapper">
+    <div class="alert alert-danger" role="alert">
+      <div class="app-name">
+        <p align = "left">
+        PICNIC
+          <span style="float:right;">5m ago</span>
+        </p>
+      </div>
+        <span class="glyphicon glyphicon-alert"></span>
+        <strong>CAUTION: Heavy rain detected! Tap to view more details.</strong>
+    </div>
+  </div>
+  
+  <h1 style="text-align:center; font-size:40px">
+    Oakland, CA
+  </h1>
+  
+  <h2 style="text-align:center; font-size:30px">
+    Heavy Rain and Lightning
+  </h2>
+  
+  <p style="text-align:center;">
+    <img src="/static/weather/assets/lightning.svg" align="middle" width="150" height="150">
+  </p>
+  
+  <p style="text-align:center; font-size:40px">
+    5°C
+  </p>
+  
+  <div style="text-align:center">
+    <span class="warning">
+      <img src="/static/weather/assets/warning.svg" align="middle" width="80" height="80">
+    </span>
+  </div>
+  
+  <div class="water-wind-wrapper">
+    <h3 style="text-align:center">
+      <span class="glyphicon glyphicon-tint"></span> : 100%, <span class="wind"> ≈</span> <span class="wind-level">: 50 mph</span>
+    </h3>
+    </span>
+  </div>
+  
+  <div style="text-align:center">
+    <span class="weather-list">
+    <img src="/static/weather/assets/heavyrain.svg" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/heavyrain.svg" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/lightning.svg" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/lightning.svg" align="middle" width="45" height="45">
+    <img src="/static/weather/assets/heavyrain.svg" align="middle" width="45" height="45">
+    </span>    
+  </div>
+  
+  <div style="text-align:center"> 
+    <span class="hours-wrapper">
+      <span class="glyphicon glyphicon-triangle-left"></span>
+      <span style="font-size:18px">6pm 7pm 8pm 9pm 10pm</span>
+      <span class="glyphicon glyphicon-triangle-right"></span>
+    </span>
+  </div>
+  
+  <div style="text-align:center"> 
+    <span class="hourly-temp">
+      <span style="font-size:18px">5°C 5°C 4°C 3°C 2°C</span>
+    </span>
+  </div>
+      
 </body>
 </html>
-
-
-
-
-
